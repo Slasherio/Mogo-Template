@@ -1,0 +1,308 @@
+@import "variable";
+@import "libs";
+@import "fonts";
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.75;
+    color: $default-color;
+    overflow-x: hidden;
+    opacity: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*--------------------HEADER--------------------*/
+
+header {
+    background: url('../img/bg/bg-header.jpg') center;
+    background-size: cover;
+}
+
+
+/*Menu*/
+
+.top-nav {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    &_logo a {
+        font: 700 30px/30px $Montserrat;
+        color: $default-color;
+    }
+    &_list {
+        display: flex;
+    }
+    &_icon {
+        align-items: center;
+    }
+    &_elem {
+        font: 400 14px/35px $Montserrat;
+        margin-right: 59px;
+        border-bottom: 3px solid rgba(252, 227, 138, 0);
+        transition: .3s ease-out;
+        .top-nav_link {
+            color: $default-color;
+            transition: .3s ease-out;
+            text-transform: uppercase;
+        }
+        .top-nav_icon-shop,
+        .top-nav_icon-glass {
+            display: inline-block;
+            width: 25px;
+            height: 20px;
+        }
+        .top-nav_icon-glass {
+            background: url('../img/icons/banner_glass.png') no-repeat;
+        }
+        .top-nav_icon-shop {
+            background: url('../img/icons/banner_shop.png') no-repeat;
+        }
+        &:not(.top-nav_icon):hover {
+            border-bottom: 3px solid rgba(252, 227, 138, 1);
+        }
+        &:hover a {
+            color: $hover_color;
+        }
+    }
+}
+
+
+/*Burger for telephone*/
+
+.burger-menu {
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.burger,
+.burger::before,
+.burger::after {
+    position: absolute;
+    background: $default_color;
+    width: 30px;
+    height: 2px;
+    display: block;
+}
+
+.burger {
+    right: 0px;
+    opacity: 1;
+    margin-top: -5px;
+    top: 50%;
+}
+
+.burger::before {
+    top: 10px;
+    content: "";
+}
+
+.burger::after {
+    bottom: 10px;
+    content: "";
+}
+
+.burger::after,
+.burger::before,
+.burger {
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.burger-menu.menu-on .burger::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    bottom: 0px;
+}
+
+.burger-menu.menu-on .burger::before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 0px;
+}
+
+.burger-menu.menu-on .burger {
+    background: rgba(111, 111, 111, .0);
+}
+
+.burger-list {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    margin-left: -20px;
+    z-index: 1;
+}
+
+.burger-list-active {
+    display: none; //none
+}
+
+.burger_elem {
+    font: 400 14px/35px $Montserrat;
+    border: 1px solid rgba(192, 57, 43, .5);
+    text-align: center;
+    padding: 2px 20px;
+    cursor: pointer;
+    &:hover .burger_link {
+        color: rgba(192, 57, 43, 1.0);
+    }
+}
+
+.burger_link {
+    color: #fff;
+    transition: .3s;
+    width: 100%;
+}
+
+
+/*Banner*/
+
+.header-intro {
+    text-align: center;
+    margin-top: 165px;
+    h2 {
+        font: 400 72px/72px $Kaushan;
+        color: $default-color;
+        padding-bottom: 50px;
+    }
+    h1 {
+        font: 700 150px/140px $Montserrat;
+        color: $default-color;
+        padding-bottom: 65px;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 4%;
+            bottom: 0;
+            left: 48%;
+            background-color: $default-color;
+        }
+    }
+    a {
+        display: inline-block;
+        margin: 50px 0px 100px;
+        color: $default_color;
+        font: 700 14px/14px $Montserrat;
+        border: 3px solid $default_color;
+        padding: 12px 30px;
+        text-transform: uppercase;
+        transition: .5s ease-in;
+        &:hover {
+            color: #000;
+            background: $default_color;
+            transition: 1s ease-in;
+        }
+    }
+}
+
+
+/*--------------------ABOUT--------------------*/
+
+.about {
+    padding: 90px 0 110px;
+}
+
+.sect-title {
+    text-align: center;
+    color: #000;
+    h3 {
+        font: 400 24px/24px $Kaushan;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font: 700 30px/30px $Montserrat;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 37px;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 48%;
+            height: 3px;
+            width: 4%;
+            background: $uderline_color;
+        }
+    }
+}
+
+.sect-description {
+    margin: 45px 120px 100px;
+    text-align: center;
+    p {
+        font: 400 15px/24px $Roboto;
+        color: #999999;
+    }
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content_elem {
+    background-color: $fon_color;
+    width: 30%;
+    cursor: pointer;
+    height: 100%;
+    &-mask {
+        background-size: cover;
+        width: 100%;
+        height: 237px;
+        transition: .3s ease-out;
+        position: relative;
+        &:hover {
+            margin: -10px 0 0 -10px;
+        }
+    }
+    .about-content_elem-mask-one {
+        background-image: url('../img/photo/pic-1.jpg');
+    }
+    .about-content_elem-mask-two {
+        background-image: url('../img/photo/pic-2.jpg');
+    }
+    .about-content_elem-mask-three {
+        background-image: url('../img/photo/pic-3.jpg');
+    }
+}
+
+.about_sect-content_elem-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $default_color;
+    opacity: 0;
+    transition: .3s ease-out;
+    background: linear-gradient(to bottom, rgba(242, 129, 129, .8), rgba(252, 227, 138, .8));
+    h5 {
+        font: 700 18px/18px $Montserrat;
+        margin-top: 20px;
+    }
+}
+
+.about-content_elem-mask:hover .about_sect-content_elem-content {
+    opacity: 1;
+}
+
+@import "media"; // Always at the end
