@@ -204,11 +204,11 @@ header {
         border: 3px solid $default_color;
         padding: 12px 30px;
         text-transform: uppercase;
-        transition: .5s ease-in;
+        transition: .3s ease-in;
         &:hover {
             color: #000;
             background: $default_color;
-            transition: 1s ease-in;
+            transition: .3s ease-in;
         }
     }
 }
@@ -304,5 +304,147 @@ header {
 .about-content_elem-mask:hover .about_sect-content_elem-content {
     opacity: 1;
 }
+
+
+/*--------------------COUNTER SECTION--------------------*/
+
+.counter {
+    background-color: $fon_color;
+    &-info {
+        display: flex;
+        justify-content: center;
+        &_elem {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+            border-right: 1px solid #b5eae0;
+            color: $default_color;
+            padding: 85px 0;
+            span:first-child {
+                font: 700 72px/72px $Montserrat;
+                padding-bottom: 25px;
+            }
+            span:last-child {
+                font: 400 14px/14px $Montserrat;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            &:first-child {
+                border-left: 1px solid #b5eae0;
+            }
+        }
+    }
+}
+
+
+/*--------------------SERVICE SECTION--------------------*/
+.service{
+  padding: 100px 0 70px;
+  &__sect-content-1{
+    border-bottom: 1px solid #b5eae0;
+  }
+  &__sect-content-1,
+  &__sect-content-2{
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  &__sect-content_item{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 30%;
+    padding: 65px 0 50px;
+    &_img{
+      width: 10%;
+      min-width: 35px;
+      img{
+        display: block;
+        width: 100%;
+        transition: transform .8s ease-in-out;
+        &:hover{
+          cursor: pointer;
+           transition: transform .8s ease-in-out;
+      transform: rotate(360deg);
+        }
+      }
+    }
+    &_text{
+        width: 81%;
+        h3{
+          font: 400 14px/14px $Montserrat;
+          text-transform: uppercase;
+          color: #333333;
+          margin-bottom: 20px;
+        }
+        p{
+          font: 400 15px/24px $Roboto;
+          color: #999999;
+        }
+    }
+  }
+}
+
+/*--------------------DEVICE SECTION--------------------*/
+.device{
+  padding: 110px 0 0;
+  background: url('../img/bg/bg-features.jpg') center;
+  background-size: cover;
+  position: relative;
+  &__sect-content{
+    text-align: center;
+    img{
+      display: block;
+      margin: 0 auto;
+      max-width: 500px;
+      width: 100%;
+    }
+    &_absolute_img{
+      position: absolute;
+      bottom: -10%;
+      right: 22%;
+      img{
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+
+
+/*--------------------INFO SECTION--------------------*/
+.info{
+  padding: 110px 0 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import "media"; // Always at the end
