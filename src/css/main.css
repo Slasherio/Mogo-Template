@@ -207,13 +207,13 @@ header {
     border: 3px solid #fff;
     padding: 12px 30px;
     text-transform: uppercase;
-    -webkit-transition: .5s ease-in;
-    transition: .5s ease-in; }
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in; }
     .header-intro a:hover {
       color: #000;
       background: #fff;
-      -webkit-transition: 1s ease-in;
-      transition: 1s ease-in; }
+      -webkit-transition: .3s ease-in;
+      transition: .3s ease-in; }
 
 /*--------------------ABOUT--------------------*/
 .about {
@@ -303,6 +303,116 @@ header {
 
 .about-content_elem-mask:hover .about_sect-content_elem-content {
   opacity: 1; }
+
+/*--------------------COUNTER SECTION--------------------*/
+.counter {
+  background-color: #95e1d3; }
+  .counter-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .counter-info_elem {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 20%;
+      border-right: 1px solid #b5eae0;
+      color: #fff;
+      padding: 85px 0; }
+      .counter-info_elem span:first-child {
+        font: 700 72px/72px "Montserrat", "Arial", sans-serif;
+        padding-bottom: 25px; }
+      .counter-info_elem span:last-child {
+        font: 400 14px/14px "Montserrat", "Arial", sans-serif;
+        text-transform: uppercase;
+        text-align: center; }
+      .counter-info_elem:first-child {
+        border-left: 1px solid #b5eae0; }
+
+/*--------------------SERVICE SECTION--------------------*/
+.service {
+  padding: 100px 0 70px; }
+  .service__sect-content-1 {
+    border-bottom: 1px solid #b5eae0; }
+  .service__sect-content-1, .service__sect-content-2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .service__sect-content_item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30%;
+    padding: 65px 0 50px; }
+    .service__sect-content_item_img {
+      width: 10%;
+      min-width: 35px; }
+      .service__sect-content_item_img img {
+        display: block;
+        width: 100%;
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+        transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out; }
+        .service__sect-content_item_img img:hover {
+          cursor: pointer;
+          -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: -webkit-transform .8s ease-in-out;
+          transition: transform .8s ease-in-out;
+          transition: transform .8s ease-in-out, -webkit-transform .8s ease-in-out;
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg); }
+    .service__sect-content_item_text {
+      width: 81%; }
+      .service__sect-content_item_text h3 {
+        font: 400 14px/14px "Montserrat", "Arial", sans-serif;
+        text-transform: uppercase;
+        color: #333333;
+        margin-bottom: 20px; }
+      .service__sect-content_item_text p {
+        font: 400 15px/24px "Roboto", "Arial", sans-serif;
+        color: #999999; }
+
+/*--------------------DEVICE SECTION--------------------*/
+.device {
+  padding: 110px 0 0;
+  background: url("../img/bg/bg-features.jpg") center;
+  background-size: cover;
+  position: relative; }
+  .device__sect-content {
+    text-align: center; }
+    .device__sect-content img {
+      display: block;
+      margin: 0 auto;
+      max-width: 500px;
+      width: 100%; }
+    .device__sect-content_absolute_img {
+      position: absolute;
+      bottom: -10%;
+      right: 22%; }
+      .device__sect-content_absolute_img img {
+        width: 100%;
+        display: block; }
+
+/*--------------------INFO SECTION--------------------*/
+.info {
+  padding: 110px 0 120px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
