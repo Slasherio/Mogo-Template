@@ -225,6 +225,7 @@ header {
 .about-content__elem-mask-third {
   background-image: url("../img/photo/pic-3.jpg"); }
 
+/*--------------------COUNTER SECTION--------------------*/
 .counter {
   background-color: #95e1d3; }
   .counter-content {
@@ -253,6 +254,118 @@ header {
         text-transform: uppercase; }
       .counter-content__elem:first-child {
         border-left: 1px solid #b5eae0; }
+
+/*--------------------INFO SECTION--------------------*/
+.info {
+  padding: 90px 0 110px; }
+  .info__sect-content-1, .info__sect-content-2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .info__sect-content-1 {
+    border-bottom: 1px solid #e5e5e5; }
+  .info__sect-content_item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30%;
+    padding: 65px 0 50px; }
+    .info__sect-content_item_img {
+      width: 10%;
+      min-width: 35px; }
+      .info__sect-content_item_img img {
+        width: 100%;
+        display: block;
+        -webkit-transition: -webkit-transform .5s ease-in;
+        transition: -webkit-transform .5s ease-in;
+        transition: transform .5s ease-in;
+        transition: transform .5s ease-in, -webkit-transform .5s ease-in; }
+        .info__sect-content_item_img img:hover {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+          -webkit-transition: -webkit-transform .5s ease-in;
+          transition: -webkit-transform .5s ease-in;
+          transition: transform .5s ease-in;
+          transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+          cursor: pointer; }
+    .info__sect-content_item_text {
+      width: 81%; }
+      .info__sect-content_item_text h3 {
+        color: #333333;
+        text-transform: uppercase;
+        font: 400 14px/14px "Montserrat", "Arial", sans-serif;
+        margin-bottom: 20px; }
+      .info__sect-content_item_text p {
+        color: #999999;
+        font: 400 15px/24px "Roboto", "Arial", sans-serif; }
+
+/*--------------------DEVICES SECTION--------------------*/
+.devices {
+  padding: 110px 0 0;
+  background: url("../img/bg/bg-features.jpg") center;
+  background-size: cover;
+  position: relative; }
+  .devices__content {
+    text-align: center; }
+    .devices__content img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 500px; }
+    .devices__content_img_absolute {
+      position: absolute;
+      bottom: -10%;
+      right: 23%; }
+      .devices__content_img_absolute img {
+        width: 100%;
+        display: block; }
+
+/*--------------------SERVICE SECTION--------------------*/
+.service {
+  padding: 110px 0 120px; }
+  .service-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .service-content__img {
+      width: 48%; }
+      .service-content__img img {
+        display: block;
+        width: 100%; }
+    .service-content__accordion {
+      width: 48%; }
+      .service-content__accordion-section {
+        border: 1px solid #e5e5e5;
+        margin-bottom: 12px;
+        cursor: pointer; }
+        .service-content__accordion-section_title {
+          display: block;
+          color: #333333;
+          text-transform: uppercase;
+          -webkit-transition: all linear 0.15s;
+          transition: all linear 0.15s;
+          font: 400 14px/14px "Montserrat", "Arial", sans-serif;
+          border-bottom: 1px solid #e5e5e5;
+          padding: 25px;
+          position: relative; }
+          .service-content__accordion-section_title.active {
+            background: #95e1d3; }
+        .service-content__accordion-section_text {
+          display: none;
+          color: #999999;
+          overflow: auto;
+          height: 170px;
+          padding: 10px;
+          font: italic 300 15px/24px "Roboto", "Arial", sans-serif; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
