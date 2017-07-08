@@ -28,7 +28,8 @@ gulp.task('hint', function() {
 //Task for minify our script libs and concat their into one file
 gulp.task('js', function() {
     return gulp.src([
-            'src/libs/jquery/dist/jquery.min.js'
+            'src/libs/jquery/dist/jquery.min.js',
+            'src/libs/slick-carousel/slick/slick.min.js'
             //To Do: ADD NEW LIBS
         ])
         .pipe(concat('scripts.min.js'))
