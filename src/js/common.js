@@ -1,3 +1,4 @@
+//Accordion
 jQuery(document).ready(function() {
     function close_accordion_section() {
         jQuery('.service-content__accordion .service-content__accordion-section_title').removeClass('active');
@@ -21,4 +22,10 @@ jQuery(document).ready(function() {
 
         e.preventDefault();
     });
+});
+
+//Slider
+$('.slider__wrapper').slick({
+    arrows: true,
+    dots: false
 });
