@@ -141,7 +141,7 @@ header {
             left: 48%;
             width: 4%;
             height: 3px;
-            background-color: $uderline_color;
+            background-color: $underline_color;
         }
     }
 }
@@ -473,6 +473,296 @@ header {
         img {
             display: block;
             width: 100%;
+        }
+    }
+}
+
+
+/*--------------------WORKS--------------------*/
+
+.works {
+    padding: 100px 0 120px;
+    &__wrapper {
+        background-color: $fon_color;
+        &_column {
+            display: inline-flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 780px;
+            &_item {
+                width: 25%;
+                height: 390px;
+                background-size: cover;
+                background-position: 50%;
+                cursor: pointer;
+                &_one {
+                    background-image: url('../img/photo//work-item-1.jpg')
+                }
+                ;
+                &_two {
+                    background-image: url('../img/photo//work-item-2.jpg')
+                }
+                ;
+                &_three {
+                    background-image: url('../img/photo//work-item-3.jpg')
+                }
+                ;
+                &_four {
+                    background-image: url('../img/photo//work-item-4.jpg')
+                }
+                ;
+                &_five {
+                    background-image: url('../img/photo//work-item-5.jpg');
+                    height: 100%;
+                }
+                ;
+                &_six {
+                    background-image: url('../img/photo//work-item-6.jpg')
+                }
+                ;
+                &_seven {
+                    background-image: url('../img/photo//work-item-7.jpg')
+                }
+                ;
+                &_mask {
+                    width: 100%;
+                    height: 100%;
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $default-color;
+                    opacity: 0;
+                    transition: .3s ease-out;
+                    background: linear-gradient(to bottom, rgba(243, 129, 129, .8), rgba(252, 227, 138, .8));
+                    &:hover {
+                        opacity: 1;
+                    }
+                    img {
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                    h4 {
+                        font: 400 14px/14px $Montserrat;
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                    }
+                    span {
+                        font: italic 300 15px/27px $Roboto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------TESTIMONIALS--------------------*/
+
+.testimonials {
+    padding: 70px 0;
+    background-color: $default_color;
+    &__wrapper {
+        &_item {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            &_img {
+                width: 150px;
+                img {
+                    width: 100%;
+                    display: block;
+                    border-radius: 50%;
+                }
+            }
+            &_text {
+                width: 77%;
+                p {
+                    font: italic 300 24px/36px $Roboto;
+                    color: #333333;
+                }
+                h4 {
+                    font: 400 24px/36px $Kaushan;
+                    color: #333333;
+                    position: relative;
+                    padding-left: 60px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 50px;
+                        height: 3px;
+                        background-color: #f38181;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------CLIENTS--------------------*/
+
+.clients {
+    padding: 100px 0;
+    background: url('../img/bg/bg-people.jpg');
+    background-size: cover;
+    background-position: 50%;
+    &-wrapper {
+        margin-top: 85px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin-bottom: 70px;
+            &_img {
+                width: 20%;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            &_text {
+                width: 73%;
+                h3 {
+                    font: 300 14px/14px $Montserrat;
+                    color: $sect_title;
+                    text-transform: uppercase;
+                }
+                span {
+                    color: #777777;
+                    font: italic 300 15px/27px $Roboto;
+                    position: relative;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                    display: block;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 15%;
+                        height: 3px;
+                        background-color: $underline_color;
+                    }
+                }
+                p {
+                    font: 300 15px/27px $Roboto;
+                    color: #b3b3b3;
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------BLOG--------------------*/
+
+.blog {
+    padding: 100px 0 120px;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        &__item {
+            width: 30%;
+            &_img {
+                margin-bottom: 20px;
+                position: relative;
+                cursor: pointer;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+                .date {
+                    position: absolute;
+                    bottom: 4%;
+                    left: -3%;
+                    background-color: $fon_color;
+                    width: 60px;
+                    height: 70px;
+                    display: inline-flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: $default_color;
+                    .number {
+                        font: 700 30px/30px $Montserrat;
+                    }
+                    .mounth {
+                        font: 300 15px/15px $Roboto;
+                    }
+                }
+            }
+            &_text {
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: 20px;
+                h3 {
+                    font: 300 14px/14px $Montserrat;
+                    color: $sect_title;
+                    text-transform: uppercase;
+                    padding-bottom: 10px;
+                }
+                p {
+                    font: 300 15px/27px $Roboto;
+                    color: $sect_text;
+                }
+            }
+            &_footer {
+                display: flex;
+                margin-top: 20px;
+                &-watch {
+                    margin-right: 15px;
+                    span {
+                        color: #000;
+                        font: italic 300 15px/27px $Roboto;
+                    }
+                }
+                &-comment {
+                    span {
+                        color: #000;
+                        font: italic 300 15px/27px $Roboto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*--------------------MAP--------------------*/
+
+.map {
+    background: url('../img/bg/bg-map.jpg');
+    background-size: cover;
+    background-position: 50%;
+    text-align: center;
+    padding: 60px 0;
+    img {
+        display: inline-block;
+        width: 23px;
+    }
+    h2 {
+        font: 700 24px/24px $Montserrat;
+        padding: 10px 0 20px;
+        text-transform: uppercase;
+        color: $underline_color;
+        position: relative;
+        cursor: pointer;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 48%;
+            width: 4%;
+            height: 3px;
+            background-color: $underline_color;
         }
     }
 }
