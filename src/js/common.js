@@ -27,5 +27,14 @@ jQuery(document).ready(function() {
 //Slider
 $('.slider__wrapper').slick({
     arrows: true,
-    dots: false
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000
+});
+
+//Testimonial slider
+$('.testimonials__wrapper').slick({
+    arrow: true,
+    dots: false,
+    autoplay: true
 });
