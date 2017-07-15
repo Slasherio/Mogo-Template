@@ -29,7 +29,7 @@ gulp.task('hint', function() {
 gulp.task('js', function() {
     return gulp.src([
             'src/libs/jquery/dist/jquery.min.js',
-            'src/libs/slick-carousel/slick/slick.min.js'
+            'src/libs/slick-carousel/slick/slick.js'
             //To Do: ADD NEW LIBS
         ])
         .pipe(concat('scripts.min.js'))
