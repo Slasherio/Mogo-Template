@@ -13,6 +13,7 @@
     <!--Normalize css-->
     <link rel="stylesheet" href="css/normalize.css">
 
+    <link rel="stylesheet" href="css/media.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
 
@@ -40,18 +41,18 @@
 
 <body>
     <!--BEGIN: HEADER-->
-    <header>
+    <header id="header">
         <div class="container">
-            <nav role="navigation" class="navigation">
+            <nav class="navigation">
                 <div class="navigation__logo">
-                    <a href=""><span>MoGo</span></a>
+                    <a href="#"><span>MoGo</span></a>
                 </div>
                 <ul class="navigation__list">
-                    <li class="navigation__elem"><a href="#">About</a></li>
-                    <li class="navigation__elem"><a href="#">Service</a></li>
-                    <li class="navigation__elem"><a href="#">Work</a></li>
-                    <li class="navigation__elem"><a href="#">Blog</a></li>
-                    <li class="navigation__elem"><a href="#">Contact</a></li>
+                    <li class="navigation__elem"><a href="#about" class="navigation__link">About</a></li>
+                    <li class="navigation__elem"><a href="#service" class="navigation__link">Service</a></li>
+                    <li class="navigation__elem"><a href="#works" class="navigation__link">Work</a></li>
+                    <li class="navigation__elem"><a href="#blog" class="navigation__link">Blog</a></li>
+                    <li class="navigation__elem"><a href="#footer" class="navigation__link">Contact</a></li>
                     <li class="navigation__elem navigation__icon">
                         <a href="#" class="navigation__icon-shop"></a>
                     </li>
@@ -60,6 +61,16 @@
                     </li>
                 </ul>
             </nav>
+            <div class="burger-menu">
+                <span class="burger"></span>
+            </div>
+            <ul class="burger-list burger-list-active">
+                <li class="burger_elem"><a class="burger_link" href="#about">About</a></li>
+                <li class="burger_elem"><a class="burger_link" href="#service">Service</a></li>
+                <li class="burger_elem"><a class="burger_link" href="#works">Work</a></li>
+                <li class="burger_elem"><a class="burger_link" href="#blog">Blog</a></li>
+                <li class="burger_elem"><a class="burger_link" href="#footer">Contact</a></li>
+            </ul>
             <div class="header-intro">
                 <h2>Creative Template</h2>
                 <h1>Welcome <br> to MoGo</h1>
@@ -70,7 +81,7 @@
     <!--END: HEADER-->
 
     <!--BEGIN: ABOUT SECTION-->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="sect-title">
                 <h3>What we do</h3>
@@ -112,7 +123,7 @@
     <!--END: ABOUT SECTION-->
 
     <!--BEGIN: COUNTER SECTION-->
-    <section class="counter">
+    <section id="counter" class="counter">
         <div class="container">
             <div class="counter-content">
                 <div class="counter-content__elem">
@@ -141,7 +152,7 @@
     <!--END: COUNTER SECTION-->
 
     <!--BEGIN: INFO SECTION-->
-    <section class="info">
+    <section id="info" class="info">
         <div class="container">
             <div class="sect-title">
                 <h3>We work with</h3>
@@ -213,12 +224,11 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <!--END: INFO SECTION-->
 
     <!--BEGIN: DEVICES SECTION-->
-    <section class="devices">
+    <section id="devices" class="devices">
         <div class="container">
             <div class="sect-title">
                 <h3>For all devices</h3>
@@ -235,7 +245,7 @@
     <!--END: DEVICES SECTION-->
 
     <!--BEGIN: SERVICE SECTION-->
-    <section class="service">
+    <section id="service" class="service">
         <div class="container">
             <div class="sect-title">
                 <h3>Service</h3>
@@ -279,7 +289,7 @@
     <!--END: SERVICE SECTION-->
 
     <!--BEGIN: SLIDER-->
-    <section class="slider">
+    <section id="slider" class="slider">
         <div class="container">
             <div class="slider__wrapper">
                 <div class="slider__wrapper_item">
@@ -308,7 +318,7 @@
     <!--END: SLIDER SECTION-->
 
     <!--BEGIN: TEAM SECTION-->
-    <section class="team">
+    <section id="team" class="team">
         <div class="container">
             <div class="sect-title">
                 <h3>Who we are</h3>
@@ -355,7 +365,7 @@
     <!--END: TEAM SECTION-->
 
     <!--BEGIN: LOGOS SECTION-->
-    <section class="logos">
+    <section id="logos" class="logos">
         <div class="container">
             <div class="logos-content">
                 <img src="img/bg/bg-logos.png" alt="Logos">
@@ -365,7 +375,7 @@
     <!--END: LOGOS SECTION-->
 
     <!--BEGIN: WORKS SECTION-->
-    <section class="works">
+    <section id="works" class="works">
         <div class="container">
             <div class="sect-title">
                 <h3>What we do</h3>
@@ -432,7 +442,7 @@
     <!--END: WORKS SECTION-->
 
     <!--BEGIN: TESTIMONIALS SECTION-->
-    <section class="testimonials">
+    <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="testimonials__wrapper">
                 <div class="testimonials__wrapper_item">
@@ -461,7 +471,7 @@
     <!--END: TESTIMONIALS SECTION-->
 
     <!--BEGIN: CLIENTS SECTION-->
-    <section class="clients">
+    <section id="clients" class="clients">
         <div class="container">
             <div class="sect-title">
                 <h3>Happy Clients</h3>
@@ -514,7 +524,7 @@
     <!--END: CLIENTS SECTION-->
 
     <!--BEGIN: BLOG SECTION-->
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="container">
             <div class="sect-title">
                 <h3>Our Stories</h3>
@@ -587,11 +597,96 @@
     <!--END: BLOG SECTION-->
 
     <!--BEGIN: MAP-->
-    <section class="map">
+    <section id="map" class="map">
         <img src="img/icons/map_icon.png" alt="Q">
         <h2>Open Map</h2>
     </section>
     <!--END: MAP-->
+
+    <!--BEGIN: FOOTER-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__content">
+                    <h2>MoGo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <h3><span>15k</span> followers</h3>
+                    <div class="footer__content__social">
+                        <span>Follow Us:</span>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__content__subscribe">
+                        <form action="#">
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="submit" value="subscribe">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__blog">
+                    <h2>Blogs</h2>
+                    <div class="footer__blog__content">
+                        <div class="footer__blog__content-item">
+                            <div class="footer__blog__content-item__img">
+                                <img src="img/photo/footer_blog-1.jpg" alt="Q">
+                            </div>
+                            <div class="footer__blog__content-item__text">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+                                <span>Jan 9, 2016</span>
+                            </div>
+                        </div>
+                        <div class="footer__blog__content-item">
+                            <div class="footer__blog__content-item__img">
+                                <img src="img/photo/footer_blog-1.jpg" alt="Q">
+                            </div>
+                            <div class="footer__blog__content-item__text">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+                                <span>Jan 9, 2016</span>
+                            </div>
+                        </div>
+                        <div class="footer__blog__content-item">
+                            <div class="footer__blog__content-item__img">
+                                <img src="img/photo/footer_blog-1.jpg" alt="Q">
+                            </div>
+                            <div class="footer__blog__content-item__text">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
+                                <span>Jan 9, 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__gallery">
+                    <h2>Instagram</h2>
+                    <div class="footer__gallery__wrap">
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-1.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-2.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-3.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-4.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-5.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-6.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-7.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-8.jpg" alt="Q"></div>
+                        <div class="footer__gallery__wrap-item"><img src="img/photo/inst-9.jpg" alt="Q"></div>
+                    </div>
+                    <span>View more photos</span>
+                </div>
+            </div>
+            <div class="footer__info">
+                <h4> &copy; 2016 MoGo free PSD to HTML template <a href="https://github.com/Slasherio" target="_blank">by Slasherio</a>
+                </h4>
+            </div>
+        </div>
+    </footer>
+    <!--END: FOOTER-->
     <script src="js/scripts.min.js"></script>
     <script src="js/common.js"></script>
 </body>
