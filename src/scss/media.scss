@@ -262,6 +262,12 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .sect-description{
+        padding: 10px;
+    }
+    .testimonials{
+        display: none;
+    }
     .team__sect-content__elem {
         width: 75vw;
     }
@@ -271,6 +277,9 @@
 }
 
 @media only screen and (max-width: 430px) {
+    .footer__blog__content-item__text h3{
+    font: 400 9px/10px "Montserrat", "Arial", sans-serif;
+}
     .footer__gallery__wrap-item {
         width: 22%;
     }
